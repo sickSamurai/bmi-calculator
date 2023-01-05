@@ -1,0 +1,30 @@
+.result-background {
+  padding: 16px;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  color: antiquewhite;
+  background-color: #870000;
+  border-radius: 15px;
+}
+
+.summary {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #00f545;
+}
+
+.number {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.interpretation {
+  font-size: large;
+  margin: 4px;
+}

@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito&family=Source+Sans+Pro:wght@300&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  background-color: #000051;
+}
+
+.title {
+  font-family: "Fjalla One", sans-serif;
+  color: antiquewhite;
+  margin-top: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-pink {
+  color: antiquewhite;
+  background-color: #ec407a;
+  border-color: #ec407a;
+  border-radius: 25px;
+  margin-top: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn-pink:hover {
+  background-color: #e91e63;
+  border-color: #e91e63;
+}

@@ -1,0 +1,49 @@
+<h1 class="title">BMI Calculator</h1>
+
+<div class="center-content">
+  <div class="form-box p-4">
+    <div class="hbox">
+      <div class="item-background" [ngClass]="{ 'inactive-sex': sex === 'F' }">
+        <i class="fa fa-mars sex-icon" aria-hidden="true" (click)="setMasculineSex()"></i>
+        <p>Masculino</p>
+      </div>
+      <div class="item-background" [ngClass]="{ 'inactive-sex': sex ==='M' }">
+        <i class="fa fa-venus sex-icon" aria-hidden="true" (click)="setFeminineSex()"></i>
+        <p>Femenino</p>
+      </div>
+    </div>
+
+    <div class="item-background">
+      <p>Altura</p>
+      <div>
+        <span class="number">{{height}}</span>
+        <span class="unit">cm</span>
+      </div>
+      <input type="range" min="120" max="230" [(ngModel)]="height" class="form-range slider">
+    </div>
+
+    <div class="hbox">
+      <div class="item-background">
+        <span>Peso</span>
+        <div>
+          <span class="number">{{weight}}</span>
+          <span class="unit">kg</span>
+        </div>
+        <div>
+          <i class="fa fa-minus btn-icon" aria-hidden="true" (click)="decrementWeight()"></i>
+          <i class="fa fa-plus btn-icon" aria-hidden="true" (click)="incrementWeight()"></i>
+        </div>
+      </div>
+      <div class="item-background">
+        <span>Edad</span>
+        <span class="number">{{age}}</span>
+        <div>
+          <i class="fa fa-minus btn-icon" aria-hidden="true" (click)="decrementAge()"></i>
+          <i class="fa fa-plus btn-icon" aria-hidden="true" (click)="incrementAge() "></i>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-pink" (click)="calculateBMI()">CALCULAR</button>
+  </div>
+</div>

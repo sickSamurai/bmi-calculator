@@ -1,0 +1,13 @@
+<h1 class="title">Resultado</h1>
+<div class="container-lg justify-content-center align-items-center">
+  <div class="col-6 offset-3">
+    <div class="result-background">
+      <span class="summary">{{getSummary()}}</span>
+      <span class="number">{{BMI | number:"0.0-2"}}</span>
+      <span class="interpretation">{{getInterpretation()}}</span>
+    </div>
+    <div class="col-4 offset-4">
+      <button routerLink="/" class="btn btn-primary btn-pink">Re-calcular</button>
+    </div>
+  </div>
+</div>
