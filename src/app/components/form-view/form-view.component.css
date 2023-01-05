@@ -1,0 +1,51 @@
+.item-background {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  background-color: #870000;
+  border-radius: 15px;
+}
+
+.inactive-sex {
+  background-color: #870000;
+  opacity: 0.6;
+}
+
+.sex-icon {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.btn-icon {
+  padding: 4px;
+  margin-inline: 4px;
+  border-radius: 15px;
+  background-color: #d84315;
+  cursor: pointer;
+}
+
+.form-range {
+  padding: 0px 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  outline: none;
+  border: 5px solid #ec407a;
+  border-radius: 8px;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.unit {
+  font-size: 20px;
+  font-weight: 400;
+}
